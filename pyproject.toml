@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "brat"
+name = "bratserver"
 version = "0.0.1"
 authors = [
   { name="Sampo Pyysalo", email="sampo.pyysalo@utu.fi" },
@@ -34,9 +34,8 @@ keywords = [
 [project.optional-dependencies]
 dev = ["black", "ruamel.yaml", "pytest", "pytest-cov"]
 
-#[project.scripts]
-#brat = "brat.standalone"
+[project.scripts]
+brat = "bratserver.__main__:run"
 
 [tool.setuptools]
-packages = ["brat"]
-
+packages = ["brat", "bratserver"]

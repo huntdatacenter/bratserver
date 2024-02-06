@@ -1,5 +1,8 @@
+include brat/.htaccess
 include brat/README.md
 include brat/LICENSE.md
+include brat/CONTRIBUTING.md
+include brat/CONTRIBUTORS.md
 include brat/index.html
 include brat/index.xhtml
 include brat/offline.xhtml
@@ -7,7 +10,10 @@ include brat/diff.xhtml
 include brat/favicon.ico
 include brat/ajax.fcgi
 include brat/ajax.cgi
-include brat/*.sh
+include brat/lighttpd_fcgi.conf
+include brat/tutorial.cgi
+include brat/apache-user.sh
+include brat/apache-group.sh
 
 graft brat/server/lib
 graft brat/server/src
@@ -15,6 +21,9 @@ graft brat/client/lib
 graft brat/client/src
 graft brat/static
 graft brat/tools
+graft brat/res
+graft brat/configurations
+graft brat/example-data
 
 global-exclude *.py[cod]
 global-exclude __pycache__

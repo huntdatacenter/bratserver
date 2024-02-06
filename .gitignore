@@ -1,0 +1,60 @@
+# Don't ever commit your settings
+config.py
+
+# Only use variables in the server config
+!bratserver/config.py
+
+# Python remenants
+*.pyc
+*.pyo
+
+# Standard locations of data and server temporary files
+data/
+work/
+annotation-data/
+
+__pycache__
+
+node_modules
+dist
+.temp
+cache
+.DS_Store
+/build
+.tox
+npm-debug.log
+.vscode
+/venv
+
+# vim
+*.swp
+
+*.swo
+
+# Archives
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.tgz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+
+# Packing-only formats
+*.iso
+*.tar
+
+# Package management formats
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
