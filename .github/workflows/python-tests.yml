@@ -23,7 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: ${{ github.event.release.tag_name }}
+        submodules: 'true'
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
