@@ -10,7 +10,7 @@ authors = [
 ]
 description = "BRAT (brat rapid annotation tool) is based on the stav visualiser,"
 readme = "README.md"
-license = { file = "LICENSE.md" }
+license = { file = "brat/LICENSE.md" }
 requires-python = ">=3.8"
 dependencies = [
     "gunicorn",
