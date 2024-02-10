@@ -4,9 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bratserver"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Sampo Pyysalo", email="sampo.pyysalo@utu.fi" },
+  { name="HUNT Cloud", email="cloud@hunt.ntnu.no" },
 ]
 description = "BRAT (brat rapid annotation tool) is based on the stav visualiser,"
 readme = "README.md"
